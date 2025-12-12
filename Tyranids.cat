@@ -8766,6 +8766,10 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f39-6faa-c898-9a2b" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b82a-652b-a92e-8a7e" includeChildSelections="true"/>
+          </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Melee" id="2642-0ad0-51e0-05a8" hidden="false">
           <profiles>
@@ -8792,6 +8796,10 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7457-d8bb-fcdd-d15c" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="05a7-4af1-1630-dc0b" includeChildSelections="true"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>

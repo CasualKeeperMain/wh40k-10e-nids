@@ -8741,7 +8741,7 @@
         <infoLink name="Invulnerable Save (5+)" id="bffe-1b94-1abb-3d27" hidden="false" targetId="3b8a-73e4-1389-b399" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Ranged Weapons" id="a5cb-545a-3de8-8e40" hidden="false">
+        <selectionEntryGroup name="Ranged Weapons" id="a5cb-545a-3de8-8e40" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Alpha Devourer Hive" hidden="false" id="6aab-3cdf-b556-173e">
               <profiles>
@@ -8802,7 +8802,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Melee" id="2642-0ad0-51e0-05a8" hidden="false">
+        <selectionEntryGroup name="Melee" id="2642-0ad0-51e0-05a8" hidden="false" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Gargantuan Scything Talons" hidden="false" id="fbce-eea9-8a85-c975">
               <profiles>
@@ -8856,7 +8856,7 @@
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Enhancements" hidden="false" id="4aa4-92ac-5f4b-b7da" type="selectionEntryGroup" targetId="fa5b-f646-b960-a8d3"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="4aa4-92ac-5f4b-b7da" type="selectionEntryGroup" targetId="fa5b-f646-b960-a8d3" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b984-7317-81cc-20f" name="Xenos - Tyranids" revision="111" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Dunamis55">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b984-7317-81cc-20f" name="Xenos - Tyranids" revision="112" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Dunamis55">
   <categoryEntries>
     <categoryEntry id="dc7d-ba0f-e6e-8599" name="The Swarmlord" hidden="false"/>
     <categoryEntry id="f75-65-2121-87b5" name="Broodlord" hidden="false"/>
@@ -414,6 +414,7 @@
       </entryLinks>
     </entryLink>
     <entryLink import="true" name="Hyperadapted Raveners" hidden="false" type="selectionEntry" id="504c-5d1a-b205-c53b" targetId="c10d-772e-a54f-a2b9"/>
+    <entryLink import="true" name="Dominatrix" hidden="false" id="d7a2-69cf-3471-d205" type="selectionEntry" targetId="9d45-8011-84d2-dbe4"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="cd6d-87b3-125a-f372" name="Tervigon" hidden="false" collective="false" import="true" type="model">
@@ -8683,6 +8684,134 @@
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dominatrix" hidden="false" id="9d45-8011-84d2-dbe4">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ed11-3e10-2aba-bcaf" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Void in The Warp (Aura, Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1fae-a3bc-8e98-e2f3">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 12&quot; Synapse range. Additionally, other friendly tyranid units witihin synapse range of this model may add +1 to the hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dominatrix" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7d9f-a584-e70b-1467">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">24</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Norn Made Manifest (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ea81-d6a2-3857-40ba">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battleround, choose one of the norn made manifest abilities below. The chosen effect lasts until the start of the next battleround. </characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Imperative: Offense" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ca63-b524-3da4-cf70">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Friendly units within synapse range of this model may add 1 to the attacks characteristics of weapons they are equipped with.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Imperative: Defense" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e480-ecd2-4d10-fe46">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Friendly units within synapse range of this model have a 5+ invulnerable save. If they already have a 5+ invulnerable save, subtract 1 from the AP characteristic of incoming attacks.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Imperative: Mobility" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f39d-d646-f3ec-39ca">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Select up to 2 friendly MONSTER units in your army. Until the end of your turn, they may move through terrain features and enemy models whilst making a normal, advance, or charge move.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (5+)" id="bffe-1b94-1abb-3d27" hidden="false" targetId="3b8a-73e4-1389-b399" type="profile"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged Weapons" id="a5cb-545a-3de8-8e40" hidden="false">
+          <profiles>
+            <profile name="Norn Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d66f-77e8-66a6-55c4">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">20</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+8</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Alpha Devourer Hive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fa3c-b132-f891-8762">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">20</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-Linked, Heavy</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Dominating Will" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3a99-88e0-8deb-a17f">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Torrent, Psychic, Ignores cover</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Melee" id="2642-0ad0-51e0-05a8" hidden="false">
+          <profiles>
+            <profile name="➤ Gargantuan Scything Talons - Strike" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5521-9995-2f7d-d619">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">18</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">D6+4</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+              </characteristics>
+            </profile>
+            <profile name="➤ Gargantuan Scything Talons - Sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e411-583b-7d9d-f6db">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">12</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="49fb-a6ff-630f-11d5" primary="false" name="Character"/>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="4a2c-438b-8730-8fe7" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="9693-cf84-fe69-37a9" id="d31f-4df0-681a-6e5f" primary="false" name="Monster"/>
+        <categoryLink targetId="5929-ad51-d006-e008" id="dcc2-a5c1-93e1-8df2" primary="false" name="Titanic"/>
+        <categoryLink targetId="d666-e2c9-b6cc-5716" id="2c07-1930-4ed6-40e7" primary="false" name="Towering"/>
+        <categoryLink targetId="d1d8-6ae0-1be7-e9e" id="af64-f319-a23f-cd38" primary="false" name="Faction: Tyranids"/>
+        <categoryLink targetId="7850-cc5a-c191-b80d" id="ab50-033b-bd00-ae06" primary="false" name="Great Devourer"/>
+        <categoryLink targetId="4129-a453-686a-d38a" id="c5e0-7154-c7db-4c7f" primary="false" name="Synapse"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="375"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

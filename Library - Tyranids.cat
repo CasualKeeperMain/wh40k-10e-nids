@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="374d-45f0-5832-001e" name="Library - Tyranids" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="77" revision="2" authorName="Dunamis55" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="374d-45f0-5832-001e" name="Library - Tyranids" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="77" revision="3" authorName="Dunamis55" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry id="fa68-fcb9-38c-cd0f" name="Winged Hive Tyrant" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -2728,8 +2728,52 @@
         </modifier>
       </modifiers>
     </rule>
-    <rule id="395b-a159-b293-27aa" name="Shadow in the Warp" hidden="false">
-      <description>If your Army Faction is **^^Tyranids^^**, once per battle, in either player’s Command phase, if one or more units from your army with this ability are on the battlefield, you can unleash the Shadow in the Warp. When you do, each enemy unit on the battlefield must take a Battle-shock test. Each time an enemy unit takes such a Battle-shock test, if it is within 6&quot; of one or more Synapse units from your army, subtract 1 from that test.</description>
+    <rule id="395b-a159-b293-27aa" name="The Great Devourer" hidden="false">
+      <description>Models in your army with the TYRANIDS keyword gain the following abilities depending on what evolutions have been activated for your army. 
+
+
+
+In each command phase, gain 1 evolution point.
+If your warlord is on the battlefield gain 1 additional evolution point in each command phase.
+
+
+Evolutions have each got 4 tiers, and assigning an evolution point upgrades your current tier by 1 (starting from 0). 
+
+
+Evolutions are cumulative, meaning that each upgrade adds to the prior tier. 
+
+
+
+
+Vanguard forms (tier 1)
+
+
+Gene-strike Bio-Morph Synaptic Web
+Reroll hit rolls of 1. Improve movement characteristics by 1, or by 2 if your model begins it&apos;s move within synapse. +3&quot; to synapse range
+
+
+Specialising Brood (tier 2)
+
+
+Gene-strike Bio-morph Synaptic Web
++1 ap when targeting a unit on an objective. Friendly Tyranids get the benefit of cover whilst within synapse range. Units that begin an advance or charge within synapse range add 1 to the result.
+
+
+Apex Bioforms (tier 3)
+
+
+Gene-strike Bio-morph Synaptic Web
+Units within synapse range get +1 attacks. Units in your army get the feel no pain 6+ ability. Tyranids within synapse range have their objective control doubled. Synapse creatures have sticky objectives. 
+ Improved to 5+ in synapse range.
+
+
+Omega-strains (tier 4)
+
+
+Gene-strike Bio-morph Synaptic Web
++1 strength and ap to weapons +1 save and toughness Enemy units within synapse range get -1 WS/BS
+
+</description>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -3848,749 +3892,124 @@
           </selectionEntries>
           <comment>Tyranids</comment>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Biosanctic Broodsurge Enhancements" id="9cd2-6983-ed5f-baeb" hidden="false">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="ff11-0fa4-2950-380e" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+        <selectionEntryGroup name="Gene-stock Nexus Enhancements" id="a93d-266f-9bb5-c81e" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Predatory Instincts" hidden="false" id="affd-7c8d-8e66-a56d">
-              <profiles>
-                <profile name="Predatory Instincts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9435-eec8-6391-7d59">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Abominant^^**, **^^Biophagus^^** or **^^Patriarch^^** model only. Models in the bearer&apos;s unit have the Infiltrators ability and, once per battle round, you can target the bearer&apos;s unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="97b1-4873-9fcb-5cb8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="725f-8a41-dc78-52f5" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="2a91-a18e-bd08-fa66" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
+            <selectionEntry type="upgrade" import="true" name="Prey Acquisition Imperative" hidden="false" id="9cc1-f83a-2229-41e0">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="207a-e8fe-9f61-4679" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd22-15ac-3760-8bad" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="91d9-0e86-e019-b99b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Biomorph Adaption" hidden="false" id="460b-5456-314e-7a7e">
-              <profiles>
-                <profile name="Biomorph Adaption" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b629-d896-a9a8-0c82">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Abominant ^^** or **^^Patriarch^^** model only. Improve the Armour Penetration and Damage characteristics of melee weapons equipped by the bearer by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="97b1-4873-9fcb-5cb8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="2a91-a18e-bd08-fa66" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8929-d261-beb4-b980" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-              </costs>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Biomorph Adaption" field="annotation" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", " arg="+0"/>
-                    <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", " arg="+0"/>
-                    <modifier type="append" value="+0" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0"/>
-                    <modifier type="replace" value="true" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
-                    <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
-                    <modifier type="replace" value="true" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join="" arg="+0"/>
-                    <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="model" join="" arg="+0" affects="self.entries.recursive.4986-bf86-beb4-13ac"/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Mutagenic Regeneration" hidden="false" id="f560-221b-afe7-5d77">
-              <profiles>
-                <profile name="Mutagenic Regeneration" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6f69-d07e-9b64-6b0c">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Abominant^^**, **^^Biophagus^^** or **^^Patriarch^^** model only. In each Command phase, one model in the bearer&apos;s unit regains 1 lost wound.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="97b1-4873-9fcb-5cb8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="725f-8a41-dc78-52f5" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="2a91-a18e-bd08-fa66" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fdd0-0496-779d-4fc6" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Alien Majesty" hidden="false" id="826e-321d-6d5d-a609">
-              <profiles>
-                <profile name="Alien Majesty" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e69c-95ba-6e92-1806">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Abominant^^**, **^^Biophagus^^** or **^^Patriarch^^** model only. While an enemy unit is in within Engagement Range of the bearer&apos;s unit, subtract 1 from the Objective Control characteristic of models in that enemy unit (to a minimum of 1).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="97b1-4873-9fcb-5cb8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="725f-8a41-dc78-52f5" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="2a91-a18e-bd08-fa66" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c116-1c5b-9b8a-c074" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a384-0d81-cb79-05fa" includeChildSelections="false"/>
-          </constraints>
-          <comment>Genestealer Cults</comment>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Brood Brother Auxilia Enhancements" id="b5b7-d84f-b877-74d4" hidden="false">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="0a59-1d64-257c-04fb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Martial Espionage" hidden="false" id="e449-31fc-f5eb-e697">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="226b-cf1e-353a-ae7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Martial Espionage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1d34-0925-d0bd-3108">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Genestealer Cults Infantry^^** model only. Once Per turn, when a friendly **^^Astra Militarum Infantry^^** or **^^Astra Militarum Mounted^^**unit within 9&quot; of the bearer is selected to shoot, the bearer can use this Enhancement. If it does, until the end of the phase, improve the Armour Penetration characteristic of ranged weapons equipped by models in that unit by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Adaptive Reprisal" hidden="false" id="fe46-d8ec-37ec-104f">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="226b-cf1e-353a-ae7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Adaptive Reprisal" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fb86-330c-81d3-cb57">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Genestealer Cults Infantry^^** model only. Once per turn, you can target a friendly **^^Genestealer Cults^^** unit within 8&quot; of the bearer with the Heroic Intervention Stratagem for 0CP.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="The Hero Returned" hidden="false" id="42ae-8e75-ce9d-af5b">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="226b-cf1e-353a-ae7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="The Hero Returned" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3e81-9f73-e438-38a1">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Genestealer Cults Infantry^^** model only. Improve the Leadership and Objective Control characteristic of models in the bearer&apos;s unit by 1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Fire-point Commander" hidden="false" id="5ff4-2297-eba0-a0aa">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="226b-cf1e-353a-ae7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Fire-point Commander" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8eb7-fd2c-78fa-f507">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Genestealer Cults Infantry^^** model only. Each time you target the bearer&apos;s unit with the Fire Overwatch Stratagem, while resolving that stratagem, hits are successfully scored on a 5+.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="053d-ba42-7095-659e" includeChildSelections="false"/>
-          </constraints>
-          <comment>Genestealer Cults</comment>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Final Day Enhancements" id="e65d-f8c6-de9e-a19d" hidden="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecf3-8709-7cd8-244c" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Synaptic Auger" hidden="false" id="bd48-bac0-5ea2-74d6">
-              <profiles>
-                <profile name="Synaptic Auger" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="469b-a4ac-5b2e-5fbf">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Tyranids^^** model only. Each time the bearer would regain one or more lost wounds from the Psionic Parasitism Detachment rule, it regains up to twice that number of lost wounds instead.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="d1d8-6ae0-1be7-e9e" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Vanguard Tyrant" hidden="false" id="9a17-3f82-3890-5576">
-              <profiles>
-                <profile name="Vanguard Tyrant" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f3af-b19e-5c33-e4b0">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Winged Hive Tyrant^^** model only. Improve the Strength and Armour Penetration characteristics of melee weapons equipped by the bearer by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f10-fe01-4b80-8d6b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Vanguard Tyrant" field="annotation" join=", " scope="root-entry" affects="self.entries.recursive.profiles.Melee Weapons"/>
-                    <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="root-entry" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
-                    <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="root-entry" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Inhuman Integration" hidden="false" id="ab88-d94b-3bc8-e572">
-              <profiles>
-                <profile name="Inhuman Integration" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="79a0-1a2e-d00f-b128">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Genestealer Cults^^** model only. Weapons equipped by models in the bearer’s unit have the **[SUSTAINED HITS 1]** ability while targeting an enemy unit within 6&quot; of one or more friendly **^^Tyranids^^**units.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="226b-cf1e-353a-ae7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Sustained Hits" id="2960-0b33-203e-67db" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Enraptured Damnation" hidden="false" id="69e3-01eb-348d-fb96">
-              <profiles>
-                <profile name="Enraptured Damnation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9748-5886-70e6-4e25">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Genestealer Cults^^** model only. Enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer’s unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="226b-cf1e-353a-ae7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="cb2f-554e-1162-75d5" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c3a7-fdae-a434-6eff" shared="true"/>
                   </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <comment>Genestealer Cults</comment>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Host of Ascension Enhancements" id="8644-4181-9c46-52de" hidden="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d9d-6d9b-26b2-6de3" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Our Time is Nigh" hidden="false" id="7402-e585-d7cf-913e">
+                </modifier>
+              </modifiers>
               <profiles>
-                <profile name="Our Time is Nigh" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="07d2-4eee-5cb0-28d8">
+                <profile name="Prey Acquisition Imperative" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6b62-a48b-5710-a138">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Genestealer Cults^^** model only. Once per battle, when the bearer&apos;s unit declares a charge, the bearer can use the Enhancement. If it does, until the end of the phase, add 2 to Charge rolls made for the bearer&apos;s unit.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">During your command phase, you may spend 2 biomass tokens, if you do, all friendly units within synapse range get [ignores cover]</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="226b-cf1e-353a-ae7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="65f5-917a-e1af-5917" includeChildSelections="true"/>
-              </constraints>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="A Chink in Their Armour" hidden="false" id="ca5f-020c-44b1-586b">
-              <profiles>
-                <profile name="A Chink in Their Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a5aa-0218-785c-fd53">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Genestealer Cults^^** model only. Each time the bearer is set up on the battlefield as Reinforcements, until the end of your next Fight phase, ranged weapons equipped in the bearer&apos;s unit have the **[LETHAL HITS]** ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="226b-cf1e-353a-ae7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <infoLinks>
-                <infoLink name="Lethal Hits" id="9846-686b-f400-4a98" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e184-147e-15c8-d1a8" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Prowling Agitant" hidden="false" id="de75-d3a6-0cac-1903">
-              <profiles>
-                <profile name="Prowling Agitant" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f59d-6f5b-c225-bde5">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Genestealer Cults^^** model only. Once per turn, when an enemy unit ends a Normal, Advanced, or Fall Back move within 9&quot; of the bearer&apos;s unit, if the bearer&apos;s unit is not within Engagement Range of any enemy units, it can make a Normal move of up to D6&quot;.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="226b-cf1e-353a-ae7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fcf0-1a96-34f8-f412" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Assassination Edict" hidden="false" id="4136-84c7-ed34-09a6">
-              <profiles>
-                <profile name="Assassination Edict" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="35ea-1c17-0d09-35cf">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Genestealer Cults^^** model only. Each time a model in the bearer&apos;s unit makes an attack that targets a **^^Character^^** unit, add 1 to the Hit roll.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="226b-cf1e-353a-ae7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fb59-9412-bbe8-3c07" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="0a79-5968-68f0-56b5" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <comment>Genestealer Cults</comment>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Outlander Claw Enhancements" id="1a2b-2a3a-eb6a-96be" hidden="false">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="59e2-4fec-2b00-b1e8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Serpentine Tactics" hidden="false" id="19da-2c3c-bc07-93c3">
-              <profiles>
-                <profile name="Serpentine Tactics" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4036-5dd5-624c-f441">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Genestealer Cults Mounted^^** model only. The bearer&apos;s unit is eligible to shoot in a turn in which it Fell Back.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="226b-cf1e-353a-ae7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9469-8328-f901-c8b1" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Cartographic Data-leech" hidden="false" id="40bc-293e-9c00-be28">
+            <selectionEntry type="upgrade" import="true" name="Synaptic Catalyst Organ" hidden="false" id="fa18-cdba-eb39-aaa5">
               <profiles>
-                <profile name="Cartographic Data-leech" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e807-df37-9601-f121">
+                <profile name="Synaptic Catalyst Organ" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c10-d635-d8e1-9cb6">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Genestealer Cults^^** model only. While the bearer is embarked within a **^^Transport^^**, each time that **^^Transport^^** is selected to shoot, until end of the phase, improve the Ballistic Skill characteristic of ranged weapons equipped by that **^^Transport^^** as a result of the Firing Deck ability by 1.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">in your command phase, choose one friendly Tyranids unit within 18&quot;. That unit gains the synapse keyword until your next command phase. Additionally, whilst they have the synapse keyword (from this ability) they may reduce the biomass cost of one gene surge by 1. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9a54-bd18-7081-0804" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9910-2a3c-9214-a296" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c3a7-fdae-a434-6eff" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hyperdigestive Munitions" hidden="false" id="1049-51fb-cdef-68a4">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Hyperdigestive Munitions" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fb30-ef43-a39f-72df">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">in the shooting or fight phase, bearers unit can spend 3 biomass tokens for devastating wounds. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8844-b2f8-3952-6591" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7877-6aab-45b1-5450" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessings of The Norn" hidden="false" id="bf4f-5495-58a1-62d2">
+              <profiles>
+                <profile name="Blessings of The Norn" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1f95-be2d-f24a-834c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">in each command phase, generate 1 biomass token</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="226b-cf1e-353a-ae7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f10-fe01-4b80-8d6b" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="101a-751-2ee4-c46e" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="46cc-93ca-ddcb-4f41" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6510-519f-4366-791a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6861-47a6-666e-7273" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Starfall Shells" hidden="false" id="97f4-3a22-fb1c-def6">
-              <profiles>
-                <profile name="Starfall Shells" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6cd0-1e88-39cc-4009">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Genestealer Cults Mounted^^** model only. In your Shooting phase, after the bearer has shot, select one enemy unit by one or more of those attacks made with a cult sniper rifle. Until the start of your next Shooting phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="226b-cf1e-353a-ae7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0627-8fb9-33fe-73e5" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Assault Commando" hidden="false" id="faa3-d92a-6214-26f6">
-              <profiles>
-                <profile name="Assault Commando" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5a56-f3b9-e95e-99c2">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Genestealer Cults^^** model only. Each time a model in the bearer&apos;s unit makes a ranged attack, if it disembarked from a **^^Transport^^** this turn, you can re-roll the Hit roll.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="226b-cf1e-353a-ae7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="03d5-97e1-afcb-b7f3" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d186-439d-5025-9131" includeChildSelections="false"/>
-          </constraints>
-          <comment>Genestealer Cults</comment>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Xenocreed Congregation Enhancements" id="3d18-194e-8902-f9cc" hidden="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f76-1b49-07d8-0f1e" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Deeds That Speak to the Masses" hidden="false" id="f29d-ed84-546b-52aa">
-              <profiles>
-                <profile name="Deeds That Speak to the Masses" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d3ad-75df-386b-91f7">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Magus, Primus or Acolyte Iconward^^** model only. You start the battle with 2 additional Resurgence points.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f4-2157-2cb5-8bb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="30e9-42fa-3a6e-e8ef" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e367-b2cb-d22a-b17c" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gene-sire&apos;s Reliquant" hidden="false" id="aab2-2d7b-9bd6-100f">
-              <profiles>
-                <profile name="Gene-sire&apos;s Reliquant" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0c9a-9beb-1c11-484d">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Magus, Primus or Acolyte Iconward^^** model only. You can re-roll Battle-shock tests taken for the bearer&apos;s unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f4-2157-2cb5-8bb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="30e9-42fa-3a6e-e8ef" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e367-b2cb-d22a-b17c" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Incendiary Inspiration" hidden="false" id="7157-1369-82b0-1ae0">
-              <profiles>
-                <profile name="Incendiary Inspiration" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="daf0-7b6f-9229-34a9">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Magus, Primus or Acolyte Iconward^^** model only. The bearer&apos;s unit is eligible to declare a charge in a turn in which it Advanced.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f4-2157-2cb5-8bb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="30e9-42fa-3a6e-e8ef" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e367-b2cb-d22a-b17c" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Denunciator of Tyrants" hidden="false" id="b388-884e-b19d-d041">
-              <profiles>
-                <profile name="Denunciator of Tyrants" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c27-e045-f180-1712">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Magus, Primus or Acolyte Iconward^^** model only. Each time a model in the bearer&apos;s unit makes an attack that targets a **^^Character^^** unit, add 1 to the Hit Roll and add 1 to the Wound roll.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f4-2157-2cb5-8bb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="30e9-42fa-3a6e-e8ef" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e367-b2cb-d22a-b17c" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="536a-b3ea-7597-81bb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="a93d-266f-9bb5-c81e" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
-          <comment>Genestealer Cults</comment>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
@@ -4735,6 +4154,58 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
 
 
 **Designer’s Note:** *This means that the selected models can be given Enhancements and one of them can be selected as your **^^Warlord^^**.*</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gene-stock Nexus" hidden="false" id="651c-fac7-3dde-475e">
+          <profiles>
+            <profile name="Crucible of Evolution" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f22d-e209-ea09-0431">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your command phase, gain one biomass token for each objective you control. 
+Gain one biomass token for each enemy unit that you destroy. 
+Gain one biomass token for each friendly unit that is destroyed. 
+
+
+You may spend biomass tokens on &apos;gene surges&apos; for your units. 
+
+
+In the command phase you may spend:
+
+
+1 biomass token - restore up to 3 wounds to a unit. (Resurrect a model if missing one and everything is full wounds) 
+
+
+1 biomass token - target unit gains the Synapse keyword until end of turn.
+
+
+1 biomass token - add 3&quot; to the synapse range of a synapse creature.
+
+
+In the shooting phase you may spend the following amounts of biomass tokens 
+
+
+1 biomass token - ranged weapons gain assault.
+1 biomass token - +1 to hit
+2 biomass tokens - +1 to wound 
+1 biomass token - sustained hits 1 / lethal hits
+
+
+In the charge phase you may spend the following amounts of biomass tokens.
+
+
+1 biomass token - reroll the charge roll.
+2 biomass tokens - unit can charge in a turn which it fell back or advanced.
+
+
+In the fight phase you may spend the following amounts of biomass tokens
+
+
+1 biomass token - 6&quot; pile in / consolidate
+1 biomass token - +1 to hit
+2 biomass tokens - +1 to wound 
+1 biomass token - sustained hits 1 / lethal hits
+5 biomass tokens - fights first (once per battle round) </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5852,86 +5323,6 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Detachment" hidden="false" id="7170-c243-d89f-6644" defaultSelectionEntryId="none">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Host of Ascension" hidden="false" id="0a79-5968-68f0-56b5">
-          <infoLinks>
-            <infoLink name="Ignores Cover" id="d4eb-1f63-596f-0248" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
-            <infoLink name="Sustained Hits" id="6890-0ca1-a2b2-0c1e" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
-          </infoLinks>
-          <rules>
-            <rule name="A Perfect Ambush" id="8214-2942-7876-9ce9" hidden="false">
-              <description>Each time a GENESTEALER CULTS unit from your army is set up on the battlefield as Reinforcements, until the end of your next Fight phase, weapons equipped by models in that unit have the [SUSTAINED HITS 1] and [IGNORES COVER] abilities</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Xenocreed Congregation" hidden="false" id="536a-b3ea-7597-81bb">
-          <infoLinks>
-            <infoLink name="Feel No Pain" id="625a-19a0-4136-54d7" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
-          </infoLinks>
-          <rules>
-            <rule name="Unquestioning Fanaticism" id="d2bd-ec2b-d13f-7a0f" hidden="false">
-              <description>For Each ACOLYTE HYBRIDS, HYBRID METAMORPHS, and NEOPHYTE HYBRID unit from your army, while one or more CHARACTER models are leading that unit, you can re-roll Advance and Charge rolls made for it. If that CHARACTER model is a MAGUS, PRIMUS, or ACOLYTE ICONWARD, that model has the Feel No Pain 3+ ability while leading that unit.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Biosanctic Broodsurge" hidden="false" id="ff11-0fa4-2950-380e">
-          <rules>
-            <rule name="Hypermorphic Fury" id="0a4d-88d1-161e-213b" hidden="false">
-              <description>Add 1 to Charge rolls made for **^^Aberrants^^**, **^^Biophagus^^** and **^^Purestrain Genestealers^^** units from your army. In addition, each time such a unit is selected to fight, if it made a Charge move this turn, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by the models in that unit.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Outlander Claw" hidden="false" id="59e2-4fec-2b00-b1e8">
-          <rules>
-            <rule name="Rapid Takeover" id="55fe-5524-6833-4196" hidden="false">
-              <description>While a GENESTEALER CULTS MOUNTED or GENESTEALER CULTS VEHICLE model from your army is not Battle‑shocked, add 1 to its Objective Control characteristic. In addition, at the end of your Command phase, if one or more ATALAN JACKALS units from your army are within range of an objective marker you control, that objective marker remains under your control until your opponent’s Level of Control over that objective marker is greater than yours at the end of a phase.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Brood Brother Auxilia" hidden="false" id="0a59-1d64-257c-04fb">
-          <rules>
-            <rule name="Brood Brothers" id="fc33-afdd-30e9-47b1" hidden="false">
-              <description>You can include **^^Astra Militarum^^** units in your army, even though they do not have the **^^Genestealer Cult^^** Faction keyword. The combined points cost of such units you can include in your army is:
-
-- Incursion: Up to 500 pts
-- Strike Force: Up to 1000 pts
-- Onslaught: Up to 1500 pts
-
-A **^^Genestealer Cult^^** model must be your Warlord, and **^^Astra Militarum^^** models from your army lose the Voice of Command ability if they have it. You cannot include units with any of the following keywords in your army using this rule: **^^Aircraft^^**; **^^Commisar^^**; **^^Epic Hero^^**; **^^Militarum Tempestus^^**; **^^Ogryn^^**; **^^Ratling^^**; **^^Tech-Priest Enginseer^^**; **^^Ministorum Priest^^**.</description>
-            </rule>
-            <rule name="Integrated Tactics" id="2ac6-4080-aea3-847e" hidden="false">
-              <description>Each time an **^^Astra Militarum^^** unit from your army is selected to shoot, you can select one enemy unit within 18&quot; of and visible to that unit. If you do, until the end of the phase, models in that **^^Astra Militarum^^** unit can only target that enemy unit (and only if it is an eligible target) and that enemy unit is caught in overlapping fire. While an enemy unit is caught in overlapping fire, each time a **^^Genestealer Cult^^** model from your army targets that enemy unit with a ranged attack, add 1 to the Hit roll.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Final Day" hidden="false" id="cb2f-554e-1162-75d5">
-          <rules>
-            <rule name="The Star Children&apos;s Blessings" id="a351-e932-e0b3-2ed7" hidden="false">
-              <description>You can include TYRANIDS VANGUARD INVADER units (excluding AIRCRAFT, BROODLORD and GENESTEALERS units) in your army. The combined points cost of such units depends on your battle size:
-
-■ Incursion: Up to 500 pts
-■ Strike Force: Up to 1000 pts
-■ Onslaught: Up to 1500 pts
-
-No TYRANIDS models from your army can be your WARLORD.</description>
-            </rule>
-            <rule name="Psionic Parasitism" id="8db4-851f-477e-325e" hidden="false">
-              <description>At the end of your Movement phase, for each TYRANIDS SYNAPSE unit from your army, you can select one friendly GENESTEALER CULTS unit (excluding PURESTRAIN GENESTEALER and PATRIARCH units) and one friendly TYRANIDS unit each within 9&quot; of and visible to that SYNAPSE unit. If you do, that GENESTEALER CULTS unit from your army suffers D3+1 mortal wounds and one model in the selected TYRANIDS unit regains up to that many lost wounds and until the start of your next Movement phase, each time a model in the selected TYRANIDS unit makes an attack, add 1 to the Hit roll.
-
-TYRANIDS units from your army have the following ability:
-
-Catalyst (Aura): While an enemy unit is within 6&quot; of this unit, each time a friendly GENESTEALER CULTS unit makes an attack that targets that enemy unit, add 1 to the Hit roll.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-      </selectionEntries>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0fc5-7bb0-0193-6f30-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fc5-7bb0-0193-6f30-max" includeChildSelections="false"/>
-      </constraints>
-      <comment>Genestealer Cults</comment>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="a2fa-ebfd-7b32-9a75" name="Invulnerable Save (4+)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -5948,7 +5339,7 @@ Catalyst (Aura): While an enemy unit is within 6&quot; of this unit, each time a
     </profile>
     <profile id="3b8a-73e4-1389-b399" name="Invulnerable Save (5+)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 5+ invulnerable save.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save.</characteristic>
       </characteristics>
       <comment>Unit</comment>
     </profile>

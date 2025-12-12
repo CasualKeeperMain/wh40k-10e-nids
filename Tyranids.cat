@@ -42,6 +42,7 @@
     <categoryEntry name="Norn Assimilator" hidden="false" id="2982-bf74-9aa7-a7a7"/>
     <categoryEntry name="Tyranid Warriors" id="e3d4-6430-ea62-8d6d" hidden="false"/>
     <categoryEntry name="Burrower" id="7dcd-38cd-5892-32b5" hidden="false"/>
+    <categoryEntry name="dominatrix" id="8341-9f2f-81c7-308c" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="706e-86ff-ae9f-c65f" name="Winged Hive Tyrant" hidden="false" collective="false" import="true" targetId="fa68-fcb9-38c-cd0f" type="selectionEntry">
@@ -452,7 +453,7 @@
             <modifier type="append" field="name" value="D6"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Shadow in the Warp" hidden="false" type="rule" id="7300-fb6b-da38-8f07" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" hidden="false" type="rule" id="7300-fb6b-da38-8f07" targetId="395b-a159-b293-27aa"/>
         <infoLink name="Synapse" hidden="false" type="rule" id="1b95-16c8-e173-49d" targetId="86aa-437f-260b-5cad"/>
         <infoLink name="Damaged: 1-5 Wounds Remaining" hidden="false" type="profile" id="b482-7059-4d45-669e" targetId="384f-e5ff-31a2-1295"/>
       </infoLinks>
@@ -702,7 +703,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="03e9-1e26-bc4b-42a5" name="Invulnerable Save (4+)" hidden="false" targetId="a2fa-ebfd-7b32-9a75" type="profile"/>
-        <infoLink name="Shadow in the Warp" hidden="false" type="rule" id="da26-aec0-ce49-9117" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" hidden="false" type="rule" id="da26-aec0-ce49-9117" targetId="395b-a159-b293-27aa"/>
         <infoLink name="Synapse" hidden="false" type="rule" id="d127-3b0d-807d-155" targetId="86aa-437f-260b-5cad"/>
         <infoLink name="Lord of Deceit (Aura)" id="66fb-740a-84ad-e491" hidden="true" type="profile" targetId="8332-466b-a51f-63ab"/>
       </infoLinks>
@@ -841,7 +842,7 @@
         </infoLink>
         <infoLink id="71f8-7352-fa30-366c" name="Invulnerable Save (4+)" hidden="false" targetId="a2fa-ebfd-7b32-9a75" type="profile"/>
         <infoLink name="Synapse" hidden="false" type="rule" id="c52f-a31e-35e3-d878" targetId="86aa-437f-260b-5cad"/>
-        <infoLink name="Shadow in the Warp" id="b52f-37b8-c833-cbea" hidden="false" type="rule" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" id="b52f-37b8-c833-cbea" hidden="false" type="rule" targetId="395b-a159-b293-27aa"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f5d8-46d3-9bd5-c53f" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
@@ -1135,7 +1136,7 @@
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="5f2c-c566-5e94-89a2" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Shadow in the Warp" hidden="false" type="rule" id="6543-53fc-4f58-7f2e" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" hidden="false" type="rule" id="6543-53fc-4f58-7f2e" targetId="395b-a159-b293-27aa"/>
         <infoLink name="Synapse" hidden="false" type="rule" id="de76-d3df-7b8e-2703" targetId="86aa-437f-260b-5cad"/>
         <infoLink name="Invulnerable Save (5+)" id="7ecf-fb42-439d-9851" hidden="true" type="profile" targetId="3b8a-73e4-1389-b399">
           <modifiers>
@@ -1450,7 +1451,7 @@
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="8a47-7ab2-ee2f-9722" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Shadow in the Warp" hidden="false" type="rule" id="7b3e-d941-8ec7-cf66" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" hidden="false" type="rule" id="7b3e-d941-8ec7-cf66" targetId="395b-a159-b293-27aa"/>
         <infoLink name="Synapse" hidden="false" type="rule" id="72af-f501-afc8-f297" targetId="86aa-437f-260b-5cad"/>
         <infoLink name="Invulnerable Save (5+)" id="552c-f7db-9b23-20e2" hidden="true" type="profile" targetId="3b8a-73e4-1389-b399">
           <modifiers>
@@ -2558,7 +2559,7 @@
       </profiles>
       <infoLinks>
         <infoLink id="f6c8-e11d-0fee-1359" name="Invulnerable Save (4+)" hidden="false" targetId="a2fa-ebfd-7b32-9a75" type="profile"/>
-        <infoLink name="Shadow in the Warp" hidden="false" type="rule" id="9fc3-bae9-df73-3fbd" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" hidden="false" type="rule" id="9fc3-bae9-df73-3fbd" targetId="395b-a159-b293-27aa"/>
         <infoLink name="Synapse" hidden="false" type="rule" id="2fab-d80f-4e83-580c" targetId="86aa-437f-260b-5cad"/>
       </infoLinks>
       <categoryLinks>
@@ -2764,7 +2765,7 @@
           </modifiers>
         </infoLink>
         <infoLink name="Invulnerable Save (4+)" hidden="false" type="profile" id="b661-5cbe-6ad-1757" targetId="a2fa-ebfd-7b32-9a75"/>
-        <infoLink name="Shadow in the Warp" hidden="false" type="rule" id="c57d-d17b-6b28-c84d" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" hidden="false" type="rule" id="c57d-d17b-6b28-c84d" targetId="395b-a159-b293-27aa"/>
         <infoLink name="Synapse" hidden="false" type="rule" id="2101-4e5e-c060-90c4" targetId="86aa-437f-260b-5cad"/>
       </infoLinks>
       <categoryLinks>
@@ -3679,7 +3680,7 @@
       </profiles>
       <infoLinks>
         <infoLink name="Invulnerable Save (4+)" hidden="false" type="profile" id="527f-db5f-51f5-8de4" targetId="a2fa-ebfd-7b32-9a75"/>
-        <infoLink name="Shadow in the Warp" hidden="false" type="rule" id="85f9-750a-d39a-e74d" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" hidden="false" type="rule" id="85f9-750a-d39a-e74d" targetId="395b-a159-b293-27aa"/>
         <infoLink name="Synapse" hidden="false" type="rule" id="e51b-2d6d-f55c-db6" targetId="86aa-437f-260b-5cad"/>
       </infoLinks>
       <modifierGroups>
@@ -7746,7 +7747,7 @@
             <modifier type="append" value="D6" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Shadow in the Warp" hidden="false" type="rule" id="dca0-9347-e8e7-1e52" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" hidden="false" type="rule" id="dca0-9347-e8e7-1e52" targetId="395b-a159-b293-27aa"/>
         <infoLink name="Synapse" hidden="false" type="rule" id="8de1-7a61-a798-d293" targetId="86aa-437f-260b-5cad"/>
         <infoLink name="Damaged: 1-5 Wounds Remaining" hidden="false" type="profile" id="644b-6f95-7723-9f23" targetId="384f-e5ff-31a2-1295"/>
         <infoLink name="Singular Purpose" id="8728-96ae-6903-8a7b" hidden="false" targetId="286e-4c57-b171-2344" type="profile"/>
@@ -7948,7 +7949,7 @@
             <modifier type="append" value="D6" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Shadow in the Warp" hidden="false" type="rule" id="28bf-fdb0-8db9-25b4" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" hidden="false" type="rule" id="28bf-fdb0-8db9-25b4" targetId="395b-a159-b293-27aa"/>
         <infoLink name="Synapse" hidden="false" type="rule" id="9e03-1d20-f543-514e" targetId="86aa-437f-260b-5cad"/>
       </infoLinks>
       <categoryLinks>
@@ -8428,7 +8429,7 @@
             <modifier type="append" value="D3" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Shadow in the Warp" id="fda-4228-90fc-4631" hidden="false" type="rule" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" id="fda-4228-90fc-4631" hidden="false" type="rule" targetId="395b-a159-b293-27aa"/>
         <infoLink name="Synapse" id="91fc-ae63-809d-8c5a" hidden="false" type="rule" targetId="86aa-437f-260b-5cad"/>
         <infoLink name="Will of the Hive Mind" id="66ae-5330-e14a-6f07" hidden="false" type="profile" targetId="13-98c1-d481-eb95"/>
       </infoLinks>
@@ -8685,9 +8686,10 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Dominatrix" hidden="false" id="9d45-8011-84d2-dbe4">
+    <selectionEntry type="model" import="true" name="Dominatrix" hidden="false" id="9d45-8011-84d2-dbe4">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ed11-3e10-2aba-bcaf" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cef6-055b-cc46-8d3d" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <profiles>
         <profile name="Void in The Warp (Aura, Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1fae-a3bc-8e98-e2f3">
@@ -8707,7 +8709,7 @@
         </profile>
         <profile name="Norn Made Manifest (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ea81-d6a2-3857-40ba">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battleround, choose one of the norn made manifest abilities below. The chosen effect lasts until the start of the next battleround. </characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battleround, choose one of the norn made manifest abilities below. The chosen effect lasts until the start of the next battleround.</characteristic>
           </characteristics>
         </profile>
         <profile name="Imperative: Offense" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ca63-b524-3da4-cf70">
@@ -8723,6 +8725,11 @@
         <profile name="Imperative: Mobility" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f39d-d646-f3ec-39ca">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Select up to 2 friendly MONSTER units in your army. Until the end of your turn, they may move through terrain features and enemy models whilst making a normal, advance, or charge move.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Brood Mother" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="376f-5eb2-2135-2094">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You cannot include more than one Dominatrix model in your army</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8827,14 +8834,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="49fb-a6ff-630f-11d5" primary="false" name="Character"/>
-        <categoryLink targetId="4f3a-f0f7-6647-348d" id="4a2c-438b-8730-8fe7" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="49fb-a6ff-630f-11d5" primary="true" name="Character"/>
         <categoryLink targetId="9693-cf84-fe69-37a9" id="d31f-4df0-681a-6e5f" primary="false" name="Monster"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="dcc2-a5c1-93e1-8df2" primary="false" name="Titanic"/>
         <categoryLink targetId="d666-e2c9-b6cc-5716" id="2c07-1930-4ed6-40e7" primary="false" name="Towering"/>
         <categoryLink targetId="d1d8-6ae0-1be7-e9e" id="af64-f319-a23f-cd38" primary="false" name="Faction: Tyranids"/>
         <categoryLink targetId="7850-cc5a-c191-b80d" id="ab50-033b-bd00-ae06" primary="false" name="Great Devourer"/>
         <categoryLink targetId="4129-a453-686a-d38a" id="c5e0-7154-c7db-4c7f" primary="false" name="Synapse"/>
+        <categoryLink name="dominatrix" hidden="false" id="4e4c-bf31-7e19-4f1e" targetId="8341-9f2f-81c7-308c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="375"/>

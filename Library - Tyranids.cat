@@ -33,7 +33,7 @@
         </infoLink>
         <infoLink id="b12e-7b6d-4af8-4757" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
         <infoLink id="f648-e374-1db3-509c" name="Invulnerable Save (4+)" hidden="false" targetId="a2fa-ebfd-7b32-9a75" type="profile"/>
-        <infoLink name="Shadow in the Warp" hidden="false" type="rule" id="d052-102a-fd71-ef99" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" hidden="false" type="rule" id="d052-102a-fd71-ef99" targetId="395b-a159-b293-27aa"/>
         <infoLink name="Synapse" hidden="false" type="rule" id="52e5-4e0d-4d0e-572c" targetId="86aa-437f-260b-5cad"/>
         <infoLink name="Will of the Hive Mind" hidden="false" type="profile" id="edb4-b975-82dc-c551" targetId="13-98c1-d481-eb95"/>
       </infoLinks>
@@ -271,7 +271,7 @@
           </modifiers>
         </infoLink>
         <infoLink name="Synapse" hidden="false" type="rule" id="928c-8494-2e2e-5495" targetId="86aa-437f-260b-5cad"/>
-        <infoLink name="Shadow in the Warp" hidden="false" type="rule" id="563c-dd94-fae4-b249" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" hidden="false" type="rule" id="563c-dd94-fae4-b249" targetId="395b-a159-b293-27aa"/>
         <infoLink name="Invulnerable Save (5+)" id="b2f0-f174-8ab5-8a94" hidden="true" type="profile" targetId="57fe-61a-b993-2db0">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -795,7 +795,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <infoLinks>
-            <infoLink name="Shadow in the Warp" id="058e-5e13-c803-3861" hidden="false" type="rule" targetId="395b-a159-b293-27aa"/>
+            <infoLink name="The Great Devourer" id="058e-5e13-c803-3861" hidden="false" type="rule" targetId="395b-a159-b293-27aa"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1318,7 +1318,7 @@
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Shadow in the Warp" hidden="false" type="rule" id="500d-6298-c46d-d8c1" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" hidden="false" type="rule" id="500d-6298-c46d-d8c1" targetId="395b-a159-b293-27aa"/>
         <infoLink name="Lone Operative" hidden="false" type="rule" id="c3e6-e344-1978-7856" targetId="a8a0-8fe7-898-e0f3"/>
         <infoLink name="Infiltrators" hidden="false" type="rule" id="8135-18a1-df24-1415" targetId="c05d-f4c3-f091-4938"/>
         <infoLink name="Stealth" hidden="false" type="rule" id="43e5-d613-7da9-b21c" targetId="bec5-4288-34a6-ccfa"/>
@@ -1498,7 +1498,7 @@
         <infoLink name="Lone Operative" hidden="false" type="rule" id="9896-94da-baab-62f5" targetId="a8a0-8fe7-898-e0f3"/>
         <infoLink name="Stealth" hidden="false" type="rule" id="49f-799d-a6ab-8d36" targetId="bec5-4288-34a6-ccfa"/>
         <infoLink name="Synapse" hidden="false" type="rule" id="5d13-15eb-7d5c-2962" targetId="86aa-437f-260b-5cad"/>
-        <infoLink name="Shadow in the Warp" id="e592-f7b4-fc49-bd73" hidden="false" type="rule" targetId="395b-a159-b293-27aa"/>
+        <infoLink name="The Great Devourer" id="e592-f7b4-fc49-bd73" hidden="false" type="rule" targetId="395b-a159-b293-27aa"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="268b-1435-81be-2aaa" targetId="fa5b-f646-b960-a8d3" sortIndex="3"/>
@@ -2771,9 +2771,7 @@ Omega-strains (tier 4)
 
 
 Gene-strike Bio-morph Synaptic Web
-+1 strength and ap to weapons +1 save and toughness Enemy units within synapse range get -1 WS/BS
-
-</description>
++1 strength and ap to weapons +1 save and toughness Enemy units within synapse range get -1 WS/BS</description>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -3927,7 +3925,7 @@ Gene-strike Bio-morph Synaptic Web
               <profiles>
                 <profile name="Synaptic Catalyst Organ" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c10-d635-d8e1-9cb6">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">in your command phase, choose one friendly Tyranids unit within 18&quot;. That unit gains the synapse keyword until your next command phase. Additionally, whilst they have the synapse keyword (from this ability) they may reduce the biomass cost of one gene surge by 1. </characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">in your command phase, choose one friendly Tyranids unit within 18&quot;. That unit gains the synapse keyword until your next command phase. Additionally, whilst they have the synapse keyword (from this ability) they may reduce the biomass cost of one gene surge by 1.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3938,8 +3936,8 @@ Gene-strike Bio-morph Synaptic Web
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c3a7-fdae-a434-6eff" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="2917-4769-ded1-a00c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9d45-8011-84d2-dbe4" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3964,7 +3962,7 @@ Gene-strike Bio-morph Synaptic Web
               <profiles>
                 <profile name="Hyperdigestive Munitions" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fb30-ef43-a39f-72df">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">in the shooting or fight phase, bearers unit can spend 3 biomass tokens for devastating wounds. </characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">in the shooting or fight phase, bearers unit can spend 3 biomass tokens for devastating wounds.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4205,7 +4203,7 @@ In the fight phase you may spend the following amounts of biomass tokens
 1 biomass token - +1 to hit
 2 biomass tokens - +1 to wound 
 1 biomass token - sustained hits 1 / lethal hits
-5 biomass tokens - fights first (once per battle round) </characteristic>
+5 biomass tokens - fights first (once per battle round)</characteristic>
               </characteristics>
             </profile>
           </profiles>

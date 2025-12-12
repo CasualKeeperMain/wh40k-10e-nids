@@ -8731,75 +8731,99 @@
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Ranged Weapons" id="a5cb-545a-3de8-8e40" hidden="false">
-          <profiles>
-            <profile name="Norn Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d66f-77e8-66a6-55c4">
-              <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">20</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+8</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Alpha Devourer Hive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fa3c-b132-f891-8762">
-              <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">20</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-Linked, Heavy</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Dominating Will" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3a99-88e0-8deb-a17f">
-              <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Torrent, Psychic, Ignores cover</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f39-6faa-c898-9a2b" includeChildSelections="true"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b82a-652b-a92e-8a7e" includeChildSelections="true"/>
-          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Alpha Devourer Hive" hidden="false" id="6aab-3cdf-b556-173e">
+              <profiles>
+                <profile name="Alpha Devourer Hive" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9ba2-1362-d33f-9acd">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">20</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-Linked, Heavy</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b1f4-049f-4541-9fb0" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c12a-bbd9-98f6-ee86" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dominating Will" hidden="false" id="2d6d-6711-fdf2-f112">
+              <profiles>
+                <profile name="Dominating Will" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="774e-4685-5623-a1a4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Torrent, Psychic, Ignores cover</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6260-0f63-051f-46a3" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e934-17a6-3b18-44db" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Norn Cannon" hidden="false" id="67a9-7f85-490d-f784">
+              <profiles>
+                <profile name="Norn Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="bf17-a6fa-40b2-41ed">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">20</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+8</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1455-3c9b-ff57-ff8a" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57d1-1c94-61da-de0a" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Melee" id="2642-0ad0-51e0-05a8" hidden="false">
-          <profiles>
-            <profile name="➤ Gargantuan Scything Talons - Strike" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5521-9995-2f7d-d619">
-              <characteristics>
-                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
-                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                <characteristic name="S" typeId="ab33-d393-96ce-ccba">18</characteristic>
-                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
-                <characteristic name="D" typeId="3254-9fe6-d824-513e">D6+4</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
-              </characteristics>
-            </profile>
-            <profile name="➤ Gargantuan Scything Talons - Sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e411-583b-7d9d-f6db">
-              <characteristics>
-                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                <characteristic name="A" typeId="2337-daa1-6682-b110">12</characteristic>
-                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
-                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7457-d8bb-fcdd-d15c" includeChildSelections="true"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="05a7-4af1-1630-dc0b" includeChildSelections="true"/>
-          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Gargantuan Scything Talons" hidden="false" id="fbce-eea9-8a85-c975">
+              <profiles>
+                <profile name="➤ Gargantuan Scything Talons - Strike" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c1af-1cff-8a7c-30e1">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">18</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">D6+4</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                  </characteristics>
+                </profile>
+                <profile name="➤ Gargantuan Scything Talons - Sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3208-73be-3cbd-fe38">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">12</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5988-a317-3cd7-ab3b" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc98-23f0-d37d-24a8" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
